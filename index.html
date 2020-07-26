@@ -12,13 +12,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+      <script src="login.js"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
     <link rel="stylesheet" href="style.css" />
+
   </head>
 
   <body>
@@ -41,7 +42,7 @@
 
         <div class="container mt-5">
           <div class="input-group">
-            <input
+            <input id="email"
               type="text"
               placeholder="mail@example.com"
               class="form-control text"
@@ -52,7 +53,7 @@
           </div>
 
           <div class="input-group mt-3">
-            <input
+            <input id="password"
               type="password"
               placeholder="password"
               class="form-control text"
@@ -64,7 +65,7 @@
             </div>
           </div>
 
-          <button
+          <button id="sign-in" onclick="validate()"
             type="button"
             class="btn btn-info sign-in-button mt-5 font-weight-bold"
           >
